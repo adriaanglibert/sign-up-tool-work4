@@ -1,0 +1,65 @@
+[
+  {
+    "id": "f94c15c7-7509-4d3a-ae26-fcc7ca01ff3d",
+    "submittedAt": "2026-11-17T13:59:04.579Z",
+    "studentName": "Adriaan",
+    "preferences": [
+      {
+        "branchId": "web"
+      },
+      {
+        "branchId": "motion"
+      },
+      {
+        "branchId": "app-experience"
+      }
+    ],
+    "assignedCombination": {
+      "organizationId": "picturale",
+      "branchId": "web"
+    },
+    "status": "Toegewezen"
+  },
+  {
+    "id": "938aad21-299a-4ec2-b454-1bb0cbd7a919",
+    "submittedAt": "2026-11-17T14:06:23.499Z",
+    "studentName": "Adri",
+    "preferences": [
+      {
+        "branchId": "web"
+      },
+      {
+        "branchId": "motion"
+      },
+      {
+        "branchId": "app-experience"
+      }
+    ],
+    "assignedCombination": {
+      "organizationId": "picturale",
+      "branchId": "web"
+    },
+    "status": "Toegewezen"
+  },
+  {
+    "id": "ef1c90f2-d393-46e5-8839-1ed991c673b8",
+    "submittedAt": "2026-11-17T14:15:29.169Z",
+    "studentName": "Dieter Peirs",
+    "preferences": [
+      {
+        "branchId": "web"
+      },
+      {
+        "branchId": "audiovisual-identity"
+      },
+      {
+        "branchId": "app-experience"
+      }
+    ],
+    "assignedCombination": {
+      "organizationId": "picturale",
+      "branchId": "web"
+    },
+    "status": "Toegewezen"
+  }
+]

@@ -1,0 +1,270 @@
+{
+  "branches": [
+    {
+      "id": "branding",
+      "name": "Branding"
+    },
+    {
+      "id": "web",
+      "name": "Web"
+    },
+    {
+      "id": "print",
+      "name": "Print"
+    },
+    {
+      "id": "audiovisual-identity",
+      "name": "Audiovisual brand identity"
+    },
+    {
+      "id": "motion",
+      "name": "Motion"
+    },
+    {
+      "id": "app-experience",
+      "name": "App/Experience"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "picturale",
+      "name": "Picturale",
+      "cells": {
+        "branding": {
+          "maxCapacity": 1,
+          "assignedCount": 0
+        },
+        "web": {
+          "maxCapacity": 3,
+          "assignedCount": 3
+        },
+        "print": {
+          "maxCapacity": 1,
+          "assignedCount": 0
+        },
+        "audiovisual-identity": {
+          "maxCapacity": 3,
+          "assignedCount": 0
+        },
+        "motion": {
+          "maxCapacity": 2,
+          "assignedCount": 0
+        },
+        "app-experience": {
+          "maxCapacity": 2,
+          "assignedCount": 0
+        }
+      }
+    },
+    {
+      "id": "ms-liga-vlaanderen",
+      "name": "MS-Liga Vlaanderen",
+      "cells": {
+        "branding": {
+          "maxCapacity": 1,
+          "assignedCount": 0
+        },
+        "web": {
+          "maxCapacity": 1,
+          "assignedCount": 0
+        },
+        "print": {
+          "maxCapacity": 3,
+          "assignedCount": 0
+        },
+        "audiovisual-identity": {
+          "maxCapacity": 3,
+          "assignedCount": 0
+        },
+        "motion": {
+          "maxCapacity": 2,
+          "assignedCount": 0
+        },
+        "app-experience": {
+          "maxCapacity": 2,
+          "assignedCount": 0
+        }
+      }
+    },
+    {
+      "id": "mediaraven",
+      "name": "Mediaraven",
+      "cells": {
+        "branding": {
+          "maxCapacity": 1,
+          "assignedCount": 0
+        },
+        "web": {
+          "maxCapacity": 2,
+          "assignedCount": 0
+        },
+        "print": {
+          "maxCapacity": 1,
+          "assignedCount": 0
+        },
+        "audiovisual-identity": {
+          "maxCapacity": 3,
+          "assignedCount": 0
+        },
+        "motion": {
+          "maxCapacity": 3,
+          "assignedCount": 0
+        },
+        "app-experience": {
+          "maxCapacity": 3,
+          "assignedCount": 0
+        }
+      }
+    },
+    {
+      "id": "brouwerij-de-ridder",
+      "name": "Brouwerij De Ridder",
+      "cells": {
+        "branding": {
+          "maxCapacity": 3,
+          "assignedCount": 0
+        },
+        "web": {
+          "maxCapacity": 2,
+          "assignedCount": 0
+        },
+        "print": {
+          "maxCapacity": 1,
+          "assignedCount": 0
+        },
+        "audiovisual-identity": {
+          "maxCapacity": 2,
+          "assignedCount": 0
+        },
+        "motion": {
+          "maxCapacity": 2,
+          "assignedCount": 0
+        },
+        "app-experience": {
+          "maxCapacity": 3,
+          "assignedCount": 0
+        }
+      }
+    },
+    {
+      "id": "eureka-kwan-jau",
+      "name": "Eureka & Kwan Jau",
+      "cells": {
+        "branding": {
+          "maxCapacity": 3,
+          "assignedCount": 0
+        },
+        "web": {
+          "maxCapacity": 1,
+          "assignedCount": 0
+        },
+        "print": {
+          "maxCapacity": 3,
+          "assignedCount": 0
+        },
+        "audiovisual-identity": {
+          "maxCapacity": 1,
+          "assignedCount": 0
+        },
+        "motion": {
+          "maxCapacity": 3,
+          "assignedCount": 0
+        },
+        "app-experience": {
+          "maxCapacity": 1,
+          "assignedCount": 0
+        }
+      }
+    },
+    {
+      "id": "stuyfkruyd",
+      "name": "Stuyfkruyd",
+      "cells": {
+        "branding": {
+          "maxCapacity": 2,
+          "assignedCount": 0
+        },
+        "web": {
+          "maxCapacity": 3,
+          "assignedCount": 0
+        },
+        "print": {
+          "maxCapacity": 2,
+          "assignedCount": 0
+        },
+        "audiovisual-identity": {
+          "maxCapacity": 2,
+          "assignedCount": 0
+        },
+        "motion": {
+          "maxCapacity": 1,
+          "assignedCount": 0
+        },
+        "app-experience": {
+          "maxCapacity": 2,
+          "assignedCount": 0
+        }
+      }
+    },
+    {
+      "id": "vzw-sterrenstof",
+      "name": "VZW Sterrenstof",
+      "cells": {
+        "branding": {
+          "maxCapacity": 3,
+          "assignedCount": 0
+        },
+        "web": {
+          "maxCapacity": 2,
+          "assignedCount": 0
+        },
+        "print": {
+          "maxCapacity": 2,
+          "assignedCount": 0
+        },
+        "audiovisual-identity": {
+          "maxCapacity": 1,
+          "assignedCount": 0
+        },
+        "motion": {
+          "maxCapacity": 3,
+          "assignedCount": 0
+        },
+        "app-experience": {
+          "maxCapacity": 2,
+          "assignedCount": 0
+        }
+      }
+    },
+    {
+      "id": "linc",
+      "name": "LINC",
+      "cells": {
+        "branding": {
+          "maxCapacity": 3,
+          "assignedCount": 0
+        },
+        "web": {
+          "maxCapacity": 2,
+          "assignedCount": 0
+        },
+        "print": {
+          "maxCapacity": 3,
+          "assignedCount": 0
+        },
+        "audiovisual-identity": {
+          "maxCapacity": 2,
+          "assignedCount": 0
+        },
+        "motion": {
+          "maxCapacity": 1,
+          "assignedCount": 0
+        },
+        "app-experience": {
+          "maxCapacity": 1,
+          "assignedCount": 0
+        }
+      }
+    }
+  ]
+}

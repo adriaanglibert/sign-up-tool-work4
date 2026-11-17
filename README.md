@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Branch inschrijving
 
-## Getting Started
+Next.js-app voor first-come-first-serve-inschrijvingen. Studenten rangschikken drie verschillende Branches; de server wijst hen automatisch toe aan de eerste VZW met vrije capaciteit binnen hun hoogst gerangschikte Branch. Als alle drie de Branches volzet zijn, komt de student op de wachtlijst.
 
-First, run the development server:
+## Opstarten
+
+```bash
+npm install
+cp .env.example .env.local
+```
+
+Vul in `.env.local` een uniek beheerderswachtwoord en een willekeurig sessiegeheim in. Genereer dat geheim bijvoorbeeld met `openssl rand -hex 32`.
+
+```env
+ADMIN_PASSWORD=gebruik-een-lang-uniek-wachtwoord
+ADMIN_SESSION_SECRET=plaats-hier-een-willekeurig-geheim-van-minstens-32-bytes
+```
+
+Start de applicatie:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Studenten: <http://localhost:3000>
+Beheer: <http://localhost:3000/admin>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Voor productie: `npm run build` en daarna `npm run start`. Node.js 20.9 of nieuwer is vereist.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Gegevens en beheer
 
-## Learn More
+- `data/matrix.json` bevat de 8 VZW's, 6 Branches en initiële 99 plaatsen.
+- `data/submissions.json` bevat inschrijvingen, tijdstippen, drie Branchvoorkeuren en de automatisch toegewezen VZW + Branch.
+- `data/settings.json` bepaalt of inschrijven openstaat.
+- De beheerder kan capaciteit aanpassen, inschrijvingen openen/sluiten, filteren, exporteren naar JSON/CSV en alle inschrijvingen resetten.
 
-To learn more about Next.js, take a look at the following resources:
+## Opslag en deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Alle bestandsmutaties worden in het Node-proces achtereenvolgens verwerkt. JSON wordt eerst naar een tijdelijk bestand geschreven en daarna atomair vervangen. Dit voorkomt gelijktijdige dubbele toewijzingen en beschadigde individuele bestanden binnen **één Node-proces**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Deze JSON-opslag is alleen geschikt voor deployment met één serverinstantie, één Node-proces en een persistente, schrijfbare lokale schijf. Serverless hosting, meerdere replicas/processen en ephemeral filesystems zijn niet ondersteund: een in-memory lock en lokale JSON-bestanden kunnen daar geen gedeelde transactie garanderen. Maak regelmatig een back-up van de map `data`. Gebruik voor meerdere instanties een transactionele gedeelde datastore.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Beperk toegang tot `/admin`, gebruik HTTPS, houd `.env.local` geheim en vervang de voorbeeldgeheimen. In productie is `ADMIN_SESSION_SECRET` verplicht; de beheerderssessie wordt als HttpOnly, SameSite-cookie bewaard.
